@@ -1,6 +1,6 @@
 package: pynn
 script:
-  - conda build .
+  - conda build -c emka .
 
 build_targets:
   - conda

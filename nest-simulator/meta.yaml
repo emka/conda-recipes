@@ -13,11 +13,11 @@ requirements:
     - scipy
     - cython
     - readline
-    #- autoconf
-    #- automake
-    #- m4
+    - autoconf
+    - automake
+    - m4
     #- perl
-    #- libtool
+    - libtool
 
   run:
     - python

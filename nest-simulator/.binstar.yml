@@ -1,6 +1,6 @@
 package: nest-simulator
 script:
-  - conda build .
+  - conda build -c asmeurer -c emka .
 
 build_targets:
   - conda
