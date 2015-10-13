@@ -1,0 +1,75 @@
+package:
+  name: pynn
+  version: "0.8.0"
+
+source:
+  fn: PyNN-0.8.0.tar.gz
+  url: https://pypi.python.org/packages/source/P/PyNN/PyNN-0.8.0.tar.gz
+  md5: eefacdb5524d4ed82ff5cc643a27b1de
+#  patches:
+   # List any patch files here
+   # - fix.patch
+
+# build:
+  # noarch_python: True
+  # preserve_egg_dir: True
+  # entry_points:
+    # Put any entry points (scripts to be generated automatically) here. The
+    # syntax is module:function.  For example
+    #
+    # - pynn = pynn:main
+    #
+    # Would create an entry point called pynn that calls pynn.main()
+
+
+  # If this is a new build for the same version, increment the build
+  # number. If you do not include this key, it defaults to 0.
+  # number: 1
+
+requirements:
+  build:
+    - python
+
+  run:
+    - python
+    - lazyarray
+    - neo
+    - nest-simulator
+
+test:
+  # Python imports
+  imports:
+    - pyNN
+    #- pyNN.brian
+    #- pyNN.brian.standardmodels
+    - pyNN.common
+    - pyNN.descriptions
+    - pyNN.mock
+    - pyNN.nest
+    - pyNN.nest.standardmodels
+    #- pyNN.neuron
+    #- pyNN.neuron.standardmodels
+    - pyNN.recording
+    - pyNN.standardmodels
+    - pyNN.utility
+
+  # commands:
+    # You can put test commands to be run here.  Use this to test that the
+    # entry points work.
+
+
+  # You can also put a file called run_test.py in the recipe that will be run
+  # at test time.
+
+  # requires:
+    # Put any additional test requirements here.  For example
+    # - nose
+
+about:
+  home: http://neuralensemble.org/PyNN/
+  license: CeCILL http://www.cecill.info
+  summary: 'A Python package for simulator-independent specification of neuronal network models'
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml

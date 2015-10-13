@@ -1,0 +1,6 @@
+package: quantities
+script:
+  - conda build .
+
+build_targets:
+  - conda

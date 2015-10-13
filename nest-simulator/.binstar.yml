@@ -1,0 +1,6 @@
+package: nest-simulator
+script:
+  - conda build .
+
+build_targets:
+  - conda
