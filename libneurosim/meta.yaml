@@ -1,0 +1,26 @@
+package:
+  name: libneurosim
+  version: r25
+
+source:
+  svn_url: http://Anonymous:Anonymous@svn.incf.org/svn/libneurosim/trunk
+  svn_rev: 25 
+
+requirements:
+  build:
+    - python
+    - autoconf
+    - automake
+    - m4
+    - perl
+    - libtool
+    - gsl
+
+  run:
+    - python
+    - gsl
+
+about:
+  home: http://software.incf.org/software/libneurosim
+  license: GPL
+  summary: "Generic support library for neuronal simulators"

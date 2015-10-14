@@ -1,0 +1,6 @@
+package: libneurosim
+script:
+  - conda build -c asmeurer -c trent -c emka .
+
+build_targets:
+  - conda
